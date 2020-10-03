@@ -31,6 +31,16 @@ export default function Nav(): ReactElement {
                 font-size: .8rem;
             }
 
+            @media screen and (max-width: 700px) { 
+                .linkList {
+                    display: none;
+                }
+
+                nav {
+                    justify-content: space-around;
+                }
+            }
+
             .link {
                 color: rgba(255, 255, 255, .7);
                 margin: 0 1rem;

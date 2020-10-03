@@ -8,7 +8,7 @@ export default function Home(): ReactElement {
     <Head>
       <meta charSet="UTF-8"/>
       <meta name="google" content="notranslate"/>
-      <meta http-equiv="Content-Language" content="de"/>
+      <meta httpEquiv="Content-Language" content="de"/>
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
     </Head>
     <HeroSection />
