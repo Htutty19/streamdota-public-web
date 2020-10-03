@@ -4,6 +4,7 @@ import Section from "../Section";
 import SectionDescription from "../SectionDescription";
 import SectionHeader from "../SectionHeader";
 import TwoColumnContainer from "../TwoColumnContainer";
+import AntiSnipeFeatures from "./Features/AntiSnipeFeatures";
 import CardRow from "./Features/CardRow";
 import DotaWLFeatures from "./Features/DotaWLFeatures";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
@@ -55,6 +56,24 @@ export default function Features(): ReactElement {
             </Container>
         </Section>
 
+        <Section id={'antiSnipeMap'} bg={'blueGrey'}>
+            <Container>
+                <div className={'featureContainer'}>
+                    <div className={'description'}>
+                        <h3>Gameplay Tool - Anti Snipe Minimap</h3>
+                        
+                        <TwoColumnContainer>
+                            <AntiSnipeFeatures />
+
+                            <div className={'preview imagePreview minimap'}>
+                                <img src={'/images/snipeMap.png'} alt={'Win Loss Overlay'} />
+                            </div>
+                        </TwoColumnContainer>
+                    </div>
+                </div>
+            </Container>
+        </Section>
+
         <style jsx>{`
             .featureContainer {
                 padding: 0 1rem;
@@ -67,6 +86,14 @@ export default function Features(): ReactElement {
 
             .imagePreview img {
                 transform: scale(1.3);
+                max-width: 80%;
+                object-fit: contain;
+            }
+
+            .minimap {
+                max-width: 400px;
+                margin: 0 auto;
+                height:200px;
             }
 
 
