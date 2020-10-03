@@ -57,6 +57,9 @@ export default function CardRow(): ReactElement {
 
                 .cardItem {
                     width: 40%;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    margin-bottom: 4rem;
                 }
             }
 

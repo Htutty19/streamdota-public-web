@@ -48,7 +48,7 @@ export default function HeroSection(): ReactElement {
             .bottom {
                 position: absolute;
                 top: auto;
-                bottom: -5px;
+                bottom: -10px;
                 left: 0;
                 right: 0;
                 z-index: -1;
