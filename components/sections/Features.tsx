@@ -99,11 +99,13 @@ export default function Features(): ReactElement {
                         <h3>Observer Tool - Draft Stats</h3>
                         
                         <TwoColumnContainer>
+                            <div>
+                                TODO
+                            </div>
                             <video width={'100%'} autoPlay loop controls playsInline>
                                 <source src={'/videos/draft_stats.mp4'} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
-                            <RoshanFeatures />
                         </TwoColumnContainer>
                     </div>
                 </div>
