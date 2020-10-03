@@ -25,7 +25,7 @@ export default function Features(): ReactElement {
                         <TwoColumnContainer>
                             <VoteSystemFeatures />
                             <div className={'preview'}>
-                                <video width={'100%'} autoPlay loop controls>
+                                <video width={'100%'} autoPlay loop controls playsInline>
                                     <source src={'/videos/vote_system_preview.mp4'} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
