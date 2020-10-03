@@ -9,7 +9,7 @@ export default function SectionDescription({children}:{children: ReactNode}): Re
                 font-size: .7rem;
                 color: #444;
                 max-width: 900px;
-                margin: 1rem auto 2rem auto;
+                margin: 1rem auto 3rem auto;
                 text-align: center;
             }
         `}</style>

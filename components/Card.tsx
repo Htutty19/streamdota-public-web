@@ -14,6 +14,7 @@ export default function Card({children}): ReactElement {
                 transition: transform 240ms ease-in-out;
                 background-color: #FFF;
                 border-radius: 1.5rem;
+                height: 100%;
             }
 
             .card:hover {
