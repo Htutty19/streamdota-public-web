@@ -7,6 +7,7 @@ import TwoColumnContainer from "../TwoColumnContainer";
 import AntiSnipeFeatures from "./Features/AntiSnipeFeatures";
 import CardRow from "./Features/CardRow";
 import DotaWLFeatures from "./Features/DotaWLFeatures";
+import RoshanFeatures from "./Features/RoshanFeatures";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
 
 
@@ -68,6 +69,41 @@ export default function Features(): ReactElement {
                             <div className={'preview imagePreview minimap'}>
                                 <img src={'/images/snipeMap.png'} alt={'Win Loss Overlay'} />
                             </div>
+                        </TwoColumnContainer>
+                    </div>
+                </div>
+            </Container>
+        </Section>
+
+        <Section id={'roshanTimer'}>
+            <Container>
+                <div className={'featureContainer'}>
+                    <div className={'description'}>
+                        <h3>Observer Tool - Roshan Timer</h3>
+                        
+                        <TwoColumnContainer>
+                            <div className={'preview imagePreview'}>
+                                <img src={'/images/roshanTimer.jpg'} alt={'Roshan timer'} />
+                            </div>
+                            <RoshanFeatures />
+                        </TwoColumnContainer>
+                    </div>
+                </div>
+            </Container>
+        </Section>
+
+        <Section id={'draftStats'} bg={'blueGrey'}>
+            <Container>
+                <div className={'featureContainer'}>
+                    <div className={'description'}>
+                        <h3>Observer Tool - Draft Stats</h3>
+                        
+                        <TwoColumnContainer>
+                            <video width={'100%'} autoPlay loop controls playsInline>
+                                <source src={'/videos/draft_stats.mp4'} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <RoshanFeatures />
                         </TwoColumnContainer>
                     </div>
                 </div>
