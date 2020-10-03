@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import Card from "../Card";
 import Container from "../Container";
 import Section from "../Section";
 import SectionDescription from "../SectionDescription";
@@ -26,7 +25,7 @@ export default function Features(): ReactElement {
                         <TwoColumnContainer>
                             <VoteSystemFeatures />
                             <div className={'preview'}>
-                                <video width={'100%'} autoPlay loop>
+                                <video width={'100%'} autoPlay loop controls>
                                     <source src={'/videos/vote_system_preview.mp4'} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
