@@ -5,6 +5,7 @@ import SectionDescription from "../SectionDescription";
 import SectionHeader from "../SectionHeader";
 import TwoColumnContainer from "../TwoColumnContainer";
 import CardRow from "./Features/CardRow";
+import DotaWLFeatures from "./Features/DotaWLFeatures";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
 
 
@@ -36,9 +37,36 @@ export default function Features(): ReactElement {
             </Container>
         </Section>
 
+        <Section id={'dotaWL'}>
+            <Container>
+                <div className={'featureContainer'}>
+                    <div className={'description'}>
+                        <h3>Gameplay Tool - Dota Win/Loss Overlay</h3>
+                        
+                        <TwoColumnContainer>
+                            <div className={'preview imagePreview'}>
+                                <img src={'/images/winLoss.jpg'} alt={'Win Loss Overlay'} />
+                            </div>
+
+                            <DotaWLFeatures />
+                        </TwoColumnContainer>
+                    </div>
+                </div>
+            </Container>
+        </Section>
+
         <style jsx>{`
             .featureContainer {
                 padding: 0 1rem;
+            }
+
+            .imagePreview {
+                display: flex;
+                justify-content: center;
+            }
+
+            .imagePreview img {
+                transform: scale(1.3);
             }
 
 
