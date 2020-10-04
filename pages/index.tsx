@@ -7,6 +7,7 @@ import UsedByStreamers from "../components/sections/UsedByStreamers";
 import Team from "../components/sections/Team";
 import AboutDetails from "../components/sections/AboutDetails";
 import ForBusiness from "../components/sections/ForBusinesses";
+import Footer from "../components/sections/Footer";
 
 export default function Home(): ReactElement {
   return <>
@@ -24,6 +25,7 @@ export default function Home(): ReactElement {
     <UsedByStreamers />
     <AboutDetails />
     <Team />
+    <Footer />
 
     <style jsx global>{`
       body, html {
