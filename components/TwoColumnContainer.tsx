@@ -5,9 +5,10 @@ import React, { ReactElement, ReactNode } from "react";
 interface Props {
     children: ReactNode;
     reverseWrap?: boolean;
+    widths?: number[];
 }
 
-export default function TwoColumnContainer({children, reverseWrap = false}: Props): ReactElement {
+export default function TwoColumnContainer({children, reverseWrap = false, widths = [50, 50]}: Props): ReactElement {
 
     return <div className={classNames('twoColumnContainer', {reverseWrap})}>
         {React.Children.map(children, (child, idx) => <div className={'col'} key={idx}>
@@ -23,7 +24,11 @@ export default function TwoColumnContainer({children, reverseWrap = false}: Prop
 
             .col {
                 padding: 1rem;
-                width: 50%;
+                width: ${widths[0]}%;
+            }
+
+            .col + .col {
+                width: ${widths[1]}%;
             }
 
             @media screen and (max-width: 1100px) {

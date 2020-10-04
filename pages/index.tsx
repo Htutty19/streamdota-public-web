@@ -5,6 +5,7 @@ import Head from 'next/head';
 import HowDoesStreamdotaWork from "../components/sections/HowDoesStreamdotaWork";
 import UsedByEvents from "../components/sections/UsedByEvents";
 import UsedByStreamers from "../components/sections/UsedByStreamers";
+import About from "../components/sections/About";
 
 export default function Home(): ReactElement {
   return <>
@@ -20,12 +21,7 @@ export default function Home(): ReactElement {
     <HowDoesStreamdotaWork />
     <UsedByEvents />
     <UsedByStreamers />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <About />
 
     <style jsx global>{`
       body, html {
