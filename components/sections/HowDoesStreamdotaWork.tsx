@@ -18,7 +18,7 @@ export default function HowDoesStreamdotaWork(): ReactElement {
                         <h4>Collecting</h4>
 
                         <div className={'description'}>
-                            Data is being sent to our servers from Dota-GSI which is a solution bei valve. You do not require to install any software, it is simply a configuration file.
+                            Data is being sent to our servers from Dota-GSI which is a solution by valve. You do not require to install any software, it is simply a configuration file.
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ export default function HowDoesStreamdotaWork(): ReactElement {
                         <h4>Processing</h4>
 
                         <div className={'description'}>
-                            Our server interprets your data and recondition it and adjusts the format to send it to your overlays and your dashboard.
+                            Our server interprets your data, recondition it, adjusts the format and sends it to your overlays and your dashboard.
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ export default function HowDoesStreamdotaWork(): ReactElement {
                         <h4>Displaying</h4>
 
                         <div className={'description'}>
-                            You can add the overlays simply to your streaming software and it is displayed instantly after being processed or requested.
+                            You can add the overlays simply to your streaming software. The overlays displaying as soon as it was requested or the data has been processed.
                         </div>
 
                     </div>
