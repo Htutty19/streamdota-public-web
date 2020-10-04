@@ -25,7 +25,9 @@ export default function About(): ReactElement {
                         I have started playing dota like 15 years ago and started developing and hosting it 10 years ago. Although i stopped playing dota, i still like to work and develope for it. I love to watch castings, but I enjoy it a lot more with some stats, interactions and in-depth information. That's how i started developing a platform for twitch streamers.
                     </div>
                 </div>
-            </TwoColumnContainer>            
+            </TwoColumnContainer>        
+
+            <div className={'info'}>Yep, I'm working alone on this! <br /> However, special thanks to <a href={'https://twitter.com/shokztv'} target={'_blank'} className={'twitter noSpacing'}>@shokztv</a> for providing ideas and helping to advertise the website.</div>    
         </Container>
 
         <style jsx>{`
@@ -57,7 +59,9 @@ export default function About(): ReactElement {
                 color: rgb(29, 161, 242);
                 text-decoration: none;
             }
-
+            .twitter.noSpacing {
+                margin-left: 0;
+            }
             .twitter:hover {
                 text-decoration: underline;
             }
@@ -70,6 +74,13 @@ export default function About(): ReactElement {
             .description {
                 font-size: .8rem;
                 margin-top: .8rem;
+            }
+
+            .info {
+                padding: 2rem;
+                text-align: center;
+                color: #444;
+                font-size: .8rem;
             }
         `}</style>
     </Section>
