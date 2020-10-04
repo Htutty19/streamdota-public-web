@@ -7,7 +7,7 @@ import TwoColumnContainer from "../TwoColumnContainer";
 
 
 export default function UsedByEvents(): ReactElement {
-    return <Section>
+    return <Section bg={'blueGrey'}>
         <SectionHeader title={'Which events used streamdota?'} />
         <Container>
             <div className={'content'}>

@@ -6,7 +6,7 @@ import TwoColumnContainer from "../TwoColumnContainer";
 
 
 export default function Team(): ReactElement {
-    return <Section id={'team'}>
+    return <Section id={'team'} bg={'blueGrey'}>
         <SectionHeader title={'The Team'} />
 
         <Container>
