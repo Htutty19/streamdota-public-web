@@ -33,7 +33,7 @@ export default function UsedByEvents(): ReactElement {
                 <div className={'row'}>
                     <Card>
                         <div className={'cardContent'}>
-                            <TwoColumnContainer>
+                            <TwoColumnContainer reverseWrap>
                                 <div className={'details'}>
                                     <h3>Fragster DotA 2 Showdown</h3>
                                     <div className={'description'}>
@@ -78,6 +78,7 @@ export default function UsedByEvents(): ReactElement {
             .cardContent {
                 padding: 3rem;
             }
+
             .logo {
                 max-width: 200px;
                 margin: 0 auto;
@@ -103,6 +104,18 @@ export default function UsedByEvents(): ReactElement {
 
             .fragster {
                 max-width: 300px;
+            }
+
+            @media screen and (max-width: 1100px) { 
+                .content {
+                    text-align: center;
+                }
+            }
+
+            @media screen and (max-width: 700px) { 
+                .content {
+                    padding: 0 2rem;
+                }
             }
         `}</style>
     </Section>;
