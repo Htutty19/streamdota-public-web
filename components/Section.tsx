@@ -4,7 +4,7 @@ import { ReactElement, ReactNode } from "react";
 interface Props {
     children: ReactNode;
     id?: string;
-    bg?: 'none' | 'blueGrey';
+    bg?: 'none' | 'blueGrey' | 'gradiant';
 }
 
 export default function Section({bg = 'none', children, id}: Props): ReactElement {
@@ -19,6 +19,11 @@ export default function Section({bg = 'none', children, id}: Props): ReactElemen
 
             .blueGrey {
                 background-color: #f6f9fe;
+            }
+
+            .gradiant {
+                color: #FFF;
+                background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
             }
         `}</style>
     </section>

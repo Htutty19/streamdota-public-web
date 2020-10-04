@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import HeroSection from "../components/HeroSection";
 import Features from "../components/sections/Features";
 import Head from 'next/head';
+import HowDoesStreamdotaWork from "../components/sections/HowDoesStreamdotaWork";
 
 export default function Home(): ReactElement {
   return <>
@@ -11,9 +12,12 @@ export default function Home(): ReactElement {
       <meta httpEquiv="Content-Language" content="de"/>
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
     </Head>
+
     <HeroSection />
+    
     <Features />
 
+    <HowDoesStreamdotaWork />
 
     <br />
     <br />

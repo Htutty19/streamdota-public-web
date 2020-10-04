@@ -165,7 +165,6 @@ export default function Features(): ReactElement {
                 vertical-align: .1rem;
             }
 
-
             @media screen and (max-width: 1100px) { 
                 h3 {
                     text-align: center;
