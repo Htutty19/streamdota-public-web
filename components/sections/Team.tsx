@@ -5,9 +5,9 @@ import SectionHeader from "../SectionHeader";
 import TwoColumnContainer from "../TwoColumnContainer";
 
 
-export default function About(): ReactElement {
-    return <Section id={'about'}>
-        <SectionHeader title={'About streamdota'} />
+export default function Team(): ReactElement {
+    return <Section id={'team'}>
+        <SectionHeader title={'The Team'} />
 
         <Container>
             <TwoColumnContainer widths={[30, 70]}>
