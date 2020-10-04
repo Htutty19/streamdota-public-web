@@ -105,6 +105,7 @@ export default function HowDoesStreamdotaWork(): ReactElement {
                 .steps {
                     flex-direction: column;
                     align-items: center;
+                    margin: -1rem 0;
                 }
 
                 .step {

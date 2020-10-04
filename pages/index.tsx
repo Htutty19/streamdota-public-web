@@ -4,6 +4,7 @@ import Features from "../components/sections/Features";
 import Head from 'next/head';
 import HowDoesStreamdotaWork from "../components/sections/HowDoesStreamdotaWork";
 import UsedByEvents from "../components/sections/UsedByEvents";
+import UsedByStreamers from "../components/sections/UsedByStreamers";
 
 export default function Home(): ReactElement {
   return <>
@@ -18,6 +19,7 @@ export default function Home(): ReactElement {
     <Features />
     <HowDoesStreamdotaWork />
     <UsedByEvents />
+    <UsedByStreamers />
 
     <br />
     <br />
