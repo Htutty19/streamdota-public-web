@@ -20,9 +20,9 @@ export default function UsedByEvents(): ReactElement {
                                 </div>
 
                                 <div className={'details'}>
-                                    <h3>ESL Meisterschaft 2020 - Dota 2</h3>
+                                    <h3>ESL Meisterschaft 2020 Dota 2 - Season 2</h3>
                                     <div className={'description'}>
-                                        We have created a custom vote system overlay.<br /> Additionally we provide a roshan timer, draft stats and hero stats.
+                                        We have created a custom branded vote system.<br /> Additionally we provide a roshan timer, draft stats and hero stats.
                                     </div>
                                 </div>
                             </TwoColumnContainer>

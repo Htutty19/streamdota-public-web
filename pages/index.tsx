@@ -2,11 +2,11 @@ import { ReactElement } from "react";
 import HeroSection from "../components/HeroSection";
 import Features from "../components/sections/Features";
 import Head from 'next/head';
-import HowDoesStreamdotaWork from "../components/sections/HowDoesStreamdotaWork";
 import UsedByEvents from "../components/sections/UsedByEvents";
 import UsedByStreamers from "../components/sections/UsedByStreamers";
 import Team from "../components/sections/Team";
 import AboutDetails from "../components/sections/AboutDetails";
+import ForBusiness from "../components/sections/ForBusinesses";
 
 export default function Home(): ReactElement {
   return <>
@@ -19,8 +19,8 @@ export default function Home(): ReactElement {
 
     <HeroSection />
     <Features />
-    <HowDoesStreamdotaWork />
     <UsedByEvents />
+    <ForBusiness />
     <UsedByStreamers />
     <AboutDetails />
     <Team />

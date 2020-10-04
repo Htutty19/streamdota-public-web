@@ -25,6 +25,10 @@ export default function Section({bg = 'none', children, id}: Props): ReactElemen
                 color: #FFF;
                 background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
             }
+
+            .gradiant :global(.description) {
+                color: #FFF;
+            }
         `}</style>
     </section>
 }

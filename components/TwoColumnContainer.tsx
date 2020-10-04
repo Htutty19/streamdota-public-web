@@ -41,7 +41,7 @@ export default function TwoColumnContainer({children, reverseWrap = false, width
                     flex-wrap: wrap-reverse;
                 }
                 
-                .col {
+                .col, .col + .col  {
                     width: 80%;
                 }
             }
@@ -49,8 +49,9 @@ export default function TwoColumnContainer({children, reverseWrap = false, width
             @media screen and (max-width: 700px) {
                 .twoColumnContainer {
                     justify-content: space-around;
+                    margin: 0;
                 }
-                .col {
+                .col, .col + .col  {
                     width: 95%;
                 }
             }

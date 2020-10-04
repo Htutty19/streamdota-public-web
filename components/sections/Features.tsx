@@ -11,6 +11,7 @@ import DraftStatsFeatures from "./Features/DraftStatsFeatures";
 import HeroStatsFeatures from "./Features/HeroStatsFeatures";
 import RoshanFeatures from "./Features/RoshanFeatures";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
+import HowDoesStreamdotaWork from "./HowDoesStreamdotaWork";
 
 
 export default function Features(): ReactElement {
@@ -20,6 +21,8 @@ export default function Features(): ReactElement {
             <SectionDescription>A collection of overlays to enrich your stream with statistics and information</SectionDescription>
             <CardRow />
         </Section>
+
+        <HowDoesStreamdotaWork />
 
         <Section id={'voteSystem'} bg={'blueGrey'}>
             <Container>
