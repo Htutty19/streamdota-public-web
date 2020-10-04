@@ -27,7 +27,7 @@ export default function Nav(): ReactElement {
                     <div className={'link'} onClick={() => scrollTo('features')}>Features</div>
                     <div className={'link'} onClick={() => scrollTo('events')}>Used by</div>
                     <div className={'link'} onClick={() => scrollTo('about')}>About</div>
-                    <a className={'link'} href={'https://app.streamdota.com'}>Login</a>
+                    <a className={'link'} href={'https://app.streamdota.com/login'}>Login</a>
                 </div>
             </nav>
         </div>
