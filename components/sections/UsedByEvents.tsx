@@ -58,7 +58,7 @@ export default function UsedByEvents(): ReactElement {
                                 </div>
 
                                 <div className={'details'}>
-                                    <h3>ACL Masters #1</h3>
+                                    <h3>ACL Masters #1 / #2</h3>
                                     <div className={'description'}>
                                         We provided our vote system.
                                     </div>
