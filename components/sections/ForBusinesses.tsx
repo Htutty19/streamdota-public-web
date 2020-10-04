@@ -8,7 +8,7 @@ import SectionHeader from "../SectionHeader";
 export default function ForBusiness(): ReactElement {
     return <Section id={'forBusiness'} bg={'gradiant'}>
         <SectionHeader title={'For Business and Tournament Organizers'} />
-        <SectionDescription>Our overlays offer a lot of sponsorship opportunities and requires only minimal effort on our side</SectionDescription>
+        <SectionDescription>Our overlays offer a lot of sponsorship opportunities and require only minimal effort on our side</SectionDescription>
 
         <Container>
             <h4>ESLM Dota 2 - Season 2 - Custom branded vote system</h4>

@@ -18,7 +18,7 @@ const features = [
         icon: <svg width="35" height="25" viewBox="0 0 35 40" xmlns="http://www.w3.org/2000/svg">
             <path d="M20 32.5C20 33.8828 18.8828 35 17.5 35C16.1172 35 15 33.8828 15 32.5C15 30.8359 16.1172 30 17.5 30C18.8828 30 20 31.1172 20 32.5ZM35 3.75V36.25C35 38.3203 33.3203 40 31.25 40H3.75C1.67969 40 0 38.3203 0 36.25V3.75C0 1.67969 1.67969 0 3.75 0H31.25C33.3203 0 35 1.67969 35 3.75ZM32.5 3.75C32.5 3.0625 31.9375 2.5 31.25 2.5H3.75C3.0625 2.5 2.5 3.0625 2.5 3.75V36.25C2.5 36.9375 3.0625 37.5 3.75 37.5H31.25C31.9375 37.5 32.5 36.9375 32.5 36.25V3.75Z" />
         </svg>,        
-        text: 'Tablets are covered so there is no need on multiply monitors just to use these stats',
+        text: 'Also optimized for tablets. Simply use a tablet to display the stats live on your stream',
     },
     {
         icon: <svg width="39" height="25" viewBox="0 0 39 40" xmlns="http://www.w3.org/2000/svg">

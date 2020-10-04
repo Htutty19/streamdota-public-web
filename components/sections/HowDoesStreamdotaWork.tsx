@@ -61,10 +61,10 @@ export default function HowDoesStreamdotaWork(): ReactElement {
                             <path d="M31.5625 13H25V8.9375C25 8.42188 24.5781 8 24.0625 8H8.4375C7.92188 8 7.5 8.42188 7.5 8.9375V22.0625C7.5 22.5781 7.92188 23 8.4375 23H15V27.0625C15 27.5781 15.4219 28 15.9375 28H31.5625C32.0781 28 32.5 27.5781 32.5 27.0625V13.9375C32.5 13.4219 32.0781 13 31.5625 13ZM10 20.5V10.5H22.5V20.5H10ZM30 25.5H17.5V23H24.0625C24.5781 23 25 22.5781 25 22.0625V15.5H30V25.5ZM39.0625 8C39.5781 8 40 7.57812 40 7.0625V1.4375C40 0.921875 39.5781 0.5 39.0625 0.5H33.4375C32.9219 0.5 32.5 0.921875 32.5 1.4375V3H7.5V1.4375C7.5 0.921875 7.07812 0.5 6.5625 0.5H0.9375C0.421875 0.5 0 0.921875 0 1.4375V7.0625C0 7.57812 0.421875 8 0.9375 8H2.5V28H0.9375C0.421875 28 0 28.4219 0 28.9375V34.5625C0 35.0781 0.421875 35.5 0.9375 35.5H6.5625C7.07812 35.5 7.5 35.0781 7.5 34.5625V33H32.5V34.5625C32.5 35.0781 32.9219 35.5 33.4375 35.5H39.0625C39.5781 35.5 40 35.0781 40 34.5625V28.9375C40 28.4219 39.5781 28 39.0625 28H37.5V8H39.0625ZM2.5 3H5V5.5H2.5V3ZM5 33H2.5V30.5H5V33ZM32.5 28.9375V30.5H7.5V28.9375C7.5 28.4219 7.07812 28 6.5625 28H5V8H6.5625C7.07812 8 7.5 7.57812 7.5 7.0625V5.5H32.5V7.0625C32.5 7.57812 32.9219 8 33.4375 8H35V28H33.4375C32.9219 28 32.5 28.4219 32.5 28.9375ZM37.5 33H35V30.5H37.5V33ZM35 5.5V3H37.5V5.5H35Z" fill="#FFF"/>
                         </svg>
 
-                        <h4>Displaying</h4>
+                        <h4>Display the data</h4>
 
                         <div className={'description'}>
-                            You can add the overlays simply to your streaming software. The overlays displaying as soon as it was requested or the data has been processed.
+                            A simple browser source in your streaming software lets you display the data. It will be displayed either automatically or with a single click in real-time.
                         </div>
 
                     </div>

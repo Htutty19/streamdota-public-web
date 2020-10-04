@@ -22,7 +22,7 @@ export default function Team(): ReactElement {
                     <div className={'subHeader'}>Founder & Developer of streamdota</div>
 
                     <div className={'description'}>
-                        I have started playing dota like 15 years ago and started developing and hosting it 10 years ago. Although i stopped playing dota, i still like to work and develope for it. I love to watch castings, but I enjoy it a lot more with some stats, interactions and in-depth information. That's how i started developing a platform for twitch streamers.
+                    I have started playing around 15 years ago and started developing and hosting 10 years ago. Although I stopped playing dota, I still like to develope projects for it. I love to watch broadcasts, but I also enjoy it more with stats, interactions and in-depth information. That's how I started developing a platform to upgrade dota 2 streaming quality for streamers.
                     </div>
                 </div>
             </TwoColumnContainer>        

@@ -15,7 +15,7 @@ const streamer = [
 
 export default function UsedByStreamers(): ReactElement {
     return <Section bg={'blueGrey'}>
-        <SectionHeader title={'Which streamers using streamdota?'} />
+        <SectionHeader title={'These streams already use streamdota'} />
         <Container>
             <div className={'streamerGrid'}>
                 {streamer.map(({name, logo, profile, verified}) => <div className={'streamer'}>

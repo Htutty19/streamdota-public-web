@@ -35,7 +35,7 @@ export default function AboutDetails(): ReactElement {
                             </svg>
                             <h3>Security</h3>
                             <div className={'description'}>
-                                Security made simple. We do not any data aside public twitch profile data for user management. All other data is not stored and only available until it has been processed.
+                                Security made simple. We do not store any date aside public twitch profile data for user management. Every other data is not stored and only available until it has been processed.
                             </div>
                         </div>
                     </Card>
