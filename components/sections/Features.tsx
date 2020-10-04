@@ -7,6 +7,8 @@ import TwoColumnContainer from "../TwoColumnContainer";
 import AntiSnipeFeatures from "./Features/AntiSnipeFeatures";
 import CardRow from "./Features/CardRow";
 import DotaWLFeatures from "./Features/DotaWLFeatures";
+import DraftStatsFeatures from "./Features/DraftStatsFeatures";
+import HeroStatsFeatures from "./Features/HeroStatsFeatures";
 import RoshanFeatures from "./Features/RoshanFeatures";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
 
@@ -25,10 +27,10 @@ export default function Features(): ReactElement {
                     <div className={'description'}>
                         <h3>Vote System</h3>
                         
-                        <TwoColumnContainer>
+                        <TwoColumnContainer reverseWrap>
                             <VoteSystemFeatures />
                             <div className={'preview'}>
-                                <video width={'100%'} autoPlay loop controls playsInline>
+                                <video width={'100%'} autoPlay loop playsInline muted>
                                     <source src={'/videos/vote_system_preview.mp4'} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
@@ -61,9 +63,9 @@ export default function Features(): ReactElement {
             <Container>
                 <div className={'featureContainer'}>
                     <div className={'description'}>
-                        <h3>Gameplay Tool - Anti Snipe Minimap</h3>
+                        <h3>Gameplay Tool - Anti Snipe Minimap <span className={'newLabel'}>NEW</span></h3>
                         
-                        <TwoColumnContainer>
+                        <TwoColumnContainer reverseWrap>
                             <AntiSnipeFeatures />
 
                             <div className={'preview imagePreview minimap'}>
@@ -96,16 +98,32 @@ export default function Features(): ReactElement {
             <Container>
                 <div className={'featureContainer'}>
                     <div className={'description'}>
-                        <h3>Observer Tool - Draft Stats</h3>
+                        <h3>Observer Tool - Draft Stats <span className={'newLabel'}>NEW</span></h3>
                         
-                        <TwoColumnContainer>
-                            <div>
-                                TODO
-                            </div>
-                            <video width={'100%'} autoPlay loop controls playsInline>
+                        <TwoColumnContainer reverseWrap>
+                            <DraftStatsFeatures />
+                            <video width={'100%'} autoPlay loop playsInline muted>
                                 <source src={'/videos/draft_stats.mp4'} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
+                        </TwoColumnContainer>
+                    </div>
+                </div>
+            </Container>
+        </Section>
+
+        <Section id={'heroStats'}>
+            <Container>
+                <div className={'featureContainer'}>
+                    <div className={'description'}>
+                        <h3>Observer Tool - Hero Stats <span className={'newLabel'}>NEW</span></h3>
+                        
+                        <TwoColumnContainer>
+                            <video width={'100%'} autoPlay loop playsInline muted>
+                                <source src={'/videos/hero_stats.mp4'} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <HeroStatsFeatures />
                         </TwoColumnContainer>
                     </div>
                 </div>
@@ -126,12 +144,25 @@ export default function Features(): ReactElement {
                 transform: scale(1.3);
                 max-width: 80%;
                 object-fit: contain;
+                margin: 2rem 0;
             }
 
             .minimap {
                 max-width: 400px;
                 margin: 0 auto;
-                height:200px;
+                height:260px;
+            }
+
+            .newLabel {
+                background-color: var(--primary-accent);
+                padding: .25rem .5rem;
+                border-radius: .2rem;
+                color: #FFF;
+                text-transform: uppercase;
+                font-size: .8rem;
+                font-weight: bold;
+                margin-left: 1rem;
+                vertical-align: .1rem;
             }
 
 

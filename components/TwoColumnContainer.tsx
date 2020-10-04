@@ -1,13 +1,15 @@
+import classNames from "classnames";
 import React, { ReactElement, ReactNode } from "react";
 
 
 interface Props {
     children: ReactNode;
+    reverseWrap?: boolean;
 }
 
-export default function TwoColumnContainer({children}: Props): ReactElement {
+export default function TwoColumnContainer({children, reverseWrap = false}: Props): ReactElement {
 
-    return <div className={'twoColumnContainer'}>
+    return <div className={classNames('twoColumnContainer', {reverseWrap})}>
         {React.Children.map(children, (child, idx) => <div className={'col'} key={idx}>
             {child}
         </div>)}
@@ -26,9 +28,14 @@ export default function TwoColumnContainer({children}: Props): ReactElement {
 
             @media screen and (max-width: 1100px) {
                 .twoColumnContainer {
-                    flex-wrap: wrap-reverse;
+                    flex-wrap: wrap;
                     justify-content: space-around;
                 }
+
+                .reverseWrap {
+                    flex-wrap: wrap-reverse;
+                }
+                
                 .col {
                     width: 80%;
                 }
@@ -36,7 +43,6 @@ export default function TwoColumnContainer({children}: Props): ReactElement {
 
             @media screen and (max-width: 700px) {
                 .twoColumnContainer {
-                    flex-wrap: wrap-reverse;
                     justify-content: space-around;
                 }
                 .col {
