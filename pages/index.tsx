@@ -16,6 +16,7 @@ export default function Home(): ReactElement {
       <meta name="google" content="notranslate"/>
       <meta httpEquiv="Content-Language" content="de"/>
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+      <title>streamdota.com - Home</title>
     </Head>
 
     <HeroSection />
