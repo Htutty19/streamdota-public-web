@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "animated-scroll-to": "^2.0.10",
     "classnames": "^2.2.6",
     "framer-motion": "^2.7.7",
     "next": "9.5.3",

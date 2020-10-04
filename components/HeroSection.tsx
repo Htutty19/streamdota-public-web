@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import animateScrollTo from 'animated-scroll-to';
 import Nav from './Nav';
 
 
@@ -11,7 +12,7 @@ export default function HeroSection(): ReactElement {
                 streamdota.com offers different tools to enrich your twitch stream with overlays, chat command and statistics.
             </div>
 
-            <div className={'learnMore'}>
+            <div className={'learnMore'} onClick={() => animateScrollTo(document.getElementById('features'))}>
                 Learn more
             </div>
         </div>

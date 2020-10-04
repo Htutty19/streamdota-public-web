@@ -91,7 +91,7 @@ export default function UsedByStreamers(): ReactElement {
                 width: 1rem;
                 border-radius: .5rem;
                 background-color: #772ce8;
-                vertical-align: 1px;
+                vertical-align: 2px;
                 margin-right: .5rem;
             }
         `}</style>

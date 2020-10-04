@@ -1,15 +1,20 @@
-import { ReactElement } from "react";
+import { ReactElement, useCallback } from "react";
+import animateScrollTo from 'animated-scroll-to';
 
 export default function Nav(): ReactElement {
+    const scrollTo = useCallback((id: string) => {
+        animateScrollTo(document.getElementById(id));
+    }, []);
+
     return <nav>
         <img src={'/images/logo.PNG'} alt={'Streamdota logo'} />
 
         <div className={'linkList'}>
-            <div className={'link'}>Home</div>
-            <div className={'link'}>Features</div>
-            <div className={'link'}>Showcase</div>
-            <div className={'link'}>About</div>
-            <div className={'link'}>Login</div>
+            <div className={'link'} onClick={() => scrollTo('home')}>Home</div>
+            <div className={'link'} onClick={() => scrollTo('features')}>Features</div>
+            <div className={'link'} onClick={() => scrollTo('events')}>Used by</div>
+            <div className={'link'} onClick={() => scrollTo('about')}>About</div>
+            <a className={'link'} href={'https://app.streamdota.com'}>Login</a>
         </div>
 
 
@@ -47,6 +52,7 @@ export default function Nav(): ReactElement {
                 cursor: pointer;
                 transition: 120ms color ease-in-out;
                 line-height: 3rem;
+                text-decoration: none;
             }
 
             .link:hover {
