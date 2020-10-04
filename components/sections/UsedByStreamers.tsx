@@ -14,7 +14,7 @@ const streamer = [
 ];
 
 export default function UsedByStreamers(): ReactElement {
-    return <Section>
+    return <Section bg={'blueGrey'}>
         <SectionHeader title={'Which streamers using streamdota?'} />
         <Container>
             <div className={'streamerGrid'}>
