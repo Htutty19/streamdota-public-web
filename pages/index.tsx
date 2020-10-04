@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection";
 import Features from "../components/sections/Features";
 import Head from 'next/head';
 import HowDoesStreamdotaWork from "../components/sections/HowDoesStreamdotaWork";
+import UsedByEvents from "../components/sections/UsedByEvents";
 
 export default function Home(): ReactElement {
   return <>
@@ -14,10 +15,9 @@ export default function Home(): ReactElement {
     </Head>
 
     <HeroSection />
-    
     <Features />
-
     <HowDoesStreamdotaWork />
+    <UsedByEvents />
 
     <br />
     <br />
