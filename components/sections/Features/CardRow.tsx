@@ -51,6 +51,19 @@ export default function CardRow(): ReactElement {
                 width: 33%;
             }
 
+            .cardContent {
+                padding: 2.5rem 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .description {
+                color: #444;
+                font-size: .8rem;
+            }
+
             @media screen and (max-width: 1200px) {
                 .cardsContainer {
                     flex-wrap: wrap;
@@ -74,19 +87,10 @@ export default function CardRow(): ReactElement {
                 .cardItem {
                     width: 95%;
                 }
-            }
 
-            .cardContent {
-                padding: 2.5rem 3rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .description {
-                color: #444;
-                font-size: .8rem;
+                .cardContent {
+                    padding: 2rem 1.5rem;
+                }
             }
         `}</style>
     </Container>;

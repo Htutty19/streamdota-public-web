@@ -150,6 +150,10 @@ export default function AboutDetails(): ReactElement {
                 .cardItem {
                     width: 95%;
                 }
+
+                .cardContent {
+                    padding: 2rem 1.5rem;
+                }
             }
 
         `}</style>

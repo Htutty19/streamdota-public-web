@@ -37,6 +37,7 @@ export default function HeroSection(): ReactElement {
                 position: relative;
                 z-index: 1;
                 height: 800px;
+                padding-top: 60px;
             }
 
             .bgImage {

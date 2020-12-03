@@ -117,6 +117,10 @@ export default function UsedByEvents(): ReactElement {
                 .content {
                     padding: 0 2rem;
                 }
+
+                .cardContent {
+                    padding: 1rem;
+                }
             }
         `}</style>
     </Section>;
