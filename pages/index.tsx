@@ -63,7 +63,7 @@ export default function Home(): ReactElement {
       :root {
         --twitch: #772ce8;
         --primary-accent: #24d46a;
-        --secondary-accent: #CE5200;
+        --secondary-accent: #A34100;
       }
 
       * {
