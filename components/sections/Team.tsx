@@ -18,7 +18,7 @@ export default function Team(): ReactElement {
 
                 <div className={'details'}>
                     <div className={'header'}>
-                        <h3>Michael Ketzer</h3> <a href={'https://twitter.com/griefcode'} target={'_blank'} className={'twitter'}>@griefcode</a>
+                        <h3>Michael Ketzer</h3> <a href={'https://twitter.com/griefcode'} target={'_blank'} className={'twitter'}  rel={'noopener'}>@griefcode</a>
                     </div>
                     <div className={'subHeader'}>Founder & Developer of streamdota</div>
 
@@ -28,7 +28,7 @@ export default function Team(): ReactElement {
                 </div>
             </TwoColumnContainer>        
 
-            <div className={'info'}>Yep, I'm working alone on this! <br /> However, special thanks to <a href={'https://twitter.com/shokztv'} target={'_blank'} className={'twitter noSpacing'}>@shokztv</a> for providing ideas and helping to advertise the website.</div>    
+            <div className={'info'}>Yep, I'm working alone on this! <br /> However, special thanks to <a href={'https://twitter.com/shokztv'} rel={'noopener'} target={'_blank'} className={'twitter noSpacing'}>@shokztv</a> for providing ideas and helping to advertise the website.</div>    
         </Container>
 
         <style jsx>{`

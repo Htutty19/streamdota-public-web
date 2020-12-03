@@ -1,6 +1,7 @@
 import { ReactElement, useCallback, useEffect, useRef, useState } from "react";
 import animateScrollTo from 'animated-scroll-to';
 import classNames from "classnames";
+import Image from 'next/image';
 
 export default function Nav(): ReactElement {
     const ref = useRef();
@@ -20,7 +21,7 @@ export default function Nav(): ReactElement {
     return <div className={'menuContainer'} ref={ref}>
         <div className={classNames('innerContainer', {sticky})}>
             <nav>
-                <img src={'/images/logo.PNG'} alt={'Streamdota logo'} />
+                <Image src={'/images/logo.PNG'} alt={'Streamdota logo'} height={60} width={60} />
 
                 <div className={'linkList'}>
                     <div className={'link'} onClick={() => scrollTo('home')}>Home</div>

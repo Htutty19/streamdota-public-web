@@ -61,7 +61,7 @@ export default function UsedByEvents(): ReactElement {
                                 <div className={'details'}>
                                     <h3>ACL Masters #1 / #2 / #3</h3>
                                     <div className={'description'}>
-                                        We provided our vote system. FOR ACL Masters #3 we provided our roshan timer and hero stats.
+                                        We provided our vote system. For ACL Masters #3 we provided our roshan timer and hero stats.
                                     </div>
                                 </div>
                             </TwoColumnContainer>

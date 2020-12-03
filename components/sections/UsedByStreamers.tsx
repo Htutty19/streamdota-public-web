@@ -21,7 +21,7 @@ export default function UsedByStreamers(): ReactElement {
             <div className={'streamerGrid'}>
                 {streamer.map(({name, logo, profile, verified}) => <div className={'streamer'} key={name}>
                     <Card>
-                        <a className={'cardContent'} href={profile} target={'_blank'}>
+                        <a className={'cardContent'} href={profile} target={'_blank'} rel={'noopener'}>
                             <div className={'logo'}>
                                 <Image src={logo} alt={name + ' Logo'} height={100} width={100} />
                             </div>
