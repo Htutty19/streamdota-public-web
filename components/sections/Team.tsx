@@ -3,6 +3,7 @@ import Container from "../Container";
 import Section from "../Section";
 import SectionHeader from "../SectionHeader";
 import TwoColumnContainer from "../TwoColumnContainer";
+import Image from 'next/image';
 
 
 export default function Team(): ReactElement {
@@ -12,7 +13,7 @@ export default function Team(): ReactElement {
         <Container>
             <TwoColumnContainer widths={[30, 70]}>
                 <div className={'avatar'}>
-                    <img src={'/images/mk.png'} alt={'Founder Logo'} />
+                    <Image src={'/images/mk.png'} alt={'Founder Logo'} width={200} height={220}/>
                 </div>    
 
                 <div className={'details'}>

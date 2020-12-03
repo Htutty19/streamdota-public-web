@@ -4,6 +4,7 @@ import Container from "../Container";
 import Section from "../Section";
 import SectionHeader from "../SectionHeader";
 import TwoColumnContainer from "../TwoColumnContainer";
+import Image from 'next/image';
 
 
 export default function UsedByEvents(): ReactElement {
@@ -16,7 +17,7 @@ export default function UsedByEvents(): ReactElement {
                         <div className={'cardContent'}>
                             <TwoColumnContainer>
                                 <div className={'logo'}>
-                                    <img src={'/images/events/eslm.png'} alt={'ESL Meisterschaft Logo'} />
+                                    <Image src={'/images/events/eslm.png'} alt={'ESL Meisterschaft Logo'} height={200} width={193} />
                                 </div>
 
                                 <div className={'details'}>
@@ -42,7 +43,7 @@ export default function UsedByEvents(): ReactElement {
                                 </div>
 
                                 <div className={'logo fragster'}>
-                                    <img src={'/images/events/fragster.png'} alt={'Fragster Logo'} />
+                                    <Image src={'/images/events/fragster.png'} alt={'Fragster Logo'} height={60} width={300} />
                                 </div>
                             </TwoColumnContainer>
                             </div>
@@ -54,13 +55,13 @@ export default function UsedByEvents(): ReactElement {
                         <div className={'cardContent'}>
                             <TwoColumnContainer>
                                 <div className={'logo'}>
-                                    <img src={'/images/events/acl.png'} alt={'ACL'} />
+                                    <Image src={'/images/events/acl.png'} alt={'ACL'} height={210} width={200} />
                                 </div>
 
                                 <div className={'details'}>
-                                    <h3>ACL Masters #1 / #2</h3>
+                                    <h3>ACL Masters #1 / #2 / #3</h3>
                                     <div className={'description'}>
-                                        We provided our vote system.
+                                        We provided our vote system. FOR ACL Masters #3 we provided our roshan timer and hero stats.
                                     </div>
                                 </div>
                             </TwoColumnContainer>

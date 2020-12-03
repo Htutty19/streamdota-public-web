@@ -1,12 +1,16 @@
 import { ReactElement } from "react";
 import animateScrollTo from 'animated-scroll-to';
 import Nav from './Nav';
+import Image from 'next/image';
 
 
 export default function HeroSection(): ReactElement {
     return <>
         <Nav />
         <section className={'heroSection'} id={'home'}>
+            <div className={'bgImage'}>
+                <Image src={'/images/herobanner.jpg'} layout={'fill'} />
+            </div>
             <div className={'details'}>
                 <h1>Your toolbox for streaming Dota 2</h1>
                 <div className={'description'}>
@@ -33,7 +37,19 @@ export default function HeroSection(): ReactElement {
                 position: relative;
                 z-index: 1;
                 height: 800px;
-                background: rgba(0, 0, 0, 0) url('/images/herobanner.jpg') no-repeat scroll center center / cover;
+            }
+
+            .bgImage {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -2;
+            }
+
+            .bgImage :global(img) {
+                object-fit: cover;
             }
 
             .heroSection:after {

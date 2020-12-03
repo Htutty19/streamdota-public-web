@@ -3,6 +3,7 @@ import Card from "../Card";
 import Container from "../Container";
 import Section from "../Section";
 import SectionHeader from "../SectionHeader";
+import Image from 'next/image';
 
 const streamer = [
     {name: 'shokzTV', logo: '/images/streamer/shokztv.png', profile: 'https://www.twitch.tv/shokztv', verified: true},
@@ -18,11 +19,11 @@ export default function UsedByStreamers(): ReactElement {
         <SectionHeader title={'These streams already use streamdota'} />
         <Container>
             <div className={'streamerGrid'}>
-                {streamer.map(({name, logo, profile, verified}) => <div className={'streamer'}>
+                {streamer.map(({name, logo, profile, verified}) => <div className={'streamer'} key={name}>
                     <Card>
                         <a className={'cardContent'} href={profile} target={'_blank'}>
                             <div className={'logo'}>
-                                <img src={logo} alt={name + ' Logo'} />
+                                <Image src={logo} alt={name + ' Logo'} height={100} width={100} />
                             </div>
 
                             <div className={'name'}>

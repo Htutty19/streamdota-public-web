@@ -12,6 +12,7 @@ import HeroStatsFeatures from "./Features/HeroStatsFeatures";
 import RoshanFeatures from "./Features/RoshanFeatures";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
 import HowDoesStreamdotaWork from "./HowDoesStreamdotaWork";
+import Image from 'next/image';
 
 
 export default function Features(): ReactElement {
@@ -52,7 +53,7 @@ export default function Features(): ReactElement {
                         
                         <TwoColumnContainer>
                             <div className={'preview imagePreview'}>
-                                <img src={'/images/winLoss.jpg'} alt={'Win Loss Overlay'} />
+                                <Image src={'/images/winLoss.jpg'} alt={'Win Loss Overlay'} width={424} height={191} />
                             </div>
 
                             <DotaWLFeatures />
@@ -72,7 +73,7 @@ export default function Features(): ReactElement {
                             <AntiSnipeFeatures />
 
                             <div className={'preview imagePreview minimap'}>
-                                <img src={'/images/snipeMap.png'} alt={'Win Loss Overlay'} />
+                                <Image src={'/images/snipeMap.png'} alt={'Win Loss Overlay'} width={320} height={180} />
                             </div>
                         </TwoColumnContainer>
                     </div>
@@ -88,7 +89,7 @@ export default function Features(): ReactElement {
                         
                         <TwoColumnContainer>
                             <div className={'preview imagePreview'}>
-                                <img src={'/images/roshanTimer.jpg'} alt={'Roshan timer'} />
+                                <Image src={'/images/roshanTimer.jpg'} alt={'Roshan timer'} width={424} height={191} />
                             </div>
                             <RoshanFeatures />
                         </TwoColumnContainer>
