@@ -57,7 +57,7 @@ export default function Team(): ReactElement {
             .twitter {
                 margin-left: .5rem;
                 font-size: .7rem;
-                color: rgb(29, 161, 242);
+                color: #0076BF;
                 text-decoration: none;
             }
             .twitter.noSpacing {

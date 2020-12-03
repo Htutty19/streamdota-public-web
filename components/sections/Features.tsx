@@ -161,7 +161,7 @@ export default function Features(): ReactElement {
                 background-color: var(--primary-accent);
                 padding: .25rem .5rem;
                 border-radius: .2rem;
-                color: #FFF;
+                color: #000;
                 text-transform: uppercase;
                 font-size: .8rem;
                 font-weight: bold;

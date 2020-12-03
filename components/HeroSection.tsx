@@ -9,7 +9,7 @@ export default function HeroSection(): ReactElement {
         <Nav />
         <section className={'heroSection'} id={'home'}>
             <div className={'bgImage'}>
-                <Image src={'/images/herobanner.jpg'} layout={'fill'} />
+                <Image src={'/images/herobanner.jpg'} layout={'fill'}  alt={'herobanner'} />
             </div>
             <div className={'details'}>
                 <h1>Your toolbox for streaming Dota 2</h1>
@@ -102,6 +102,7 @@ export default function HeroSection(): ReactElement {
                 font-weight: bold;
                 box-shadow: 2px 2px 1rem 0 rgba(0,0,0,0.5);
                 transition: box-shadow 120ms ease-in-out;
+                color: #000;
             }
 
             .learnMore:hover {
