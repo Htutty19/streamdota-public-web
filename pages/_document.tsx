@@ -20,7 +20,7 @@ class MyDocument extends Document {
                         }
 
                         gtag('js', new Date());
-                        gtag('config', '${GA_TRACKING_ID}', {page_path: window.location.pathname});
+                        gtag('config', '${GA_TRACKING_ID}', {page_path: window.location.pathname, storage: 'none'});
                     `,
                     }}
                 />

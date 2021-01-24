@@ -5,6 +5,7 @@ export const pageview = url => {
   //@ts-ignore
     window.gtag('config', GA_TRACKING_ID, {
         page_path: url,
+        storage: 'none',
     })
 }
 
@@ -15,5 +16,6 @@ export const event = ({ action, category, label, value }) => {
         event_category: category,
         event_label: label,
         value: value,
+        storage: 'none',
     })
 }
