@@ -21,6 +21,7 @@ class MyDocument extends Document {
             <body>
                 <Main />
                 <NextScript />
+                <script src="https://consent.cookiefirst.com/banner.js" data-cookiefirst-key="fbe27f4d-71e3-41b4-b721-2707ccb4aead"></script>
             </body>
         </Html>
         );
