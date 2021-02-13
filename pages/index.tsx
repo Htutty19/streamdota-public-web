@@ -18,7 +18,6 @@ export default function Home(): ReactElement {
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
       <title>streamdota.com - Home</title>
 
-
       <meta property="og:site_name" content="StreamDota - Your toolbox for streaming dota"/>
       <meta property="og:title" content={'Dota bot, overlays, stats & more'}/>
       <meta property="og:description" content={'Your toolbox for streaming dota2 | Dota Win Loss Overlay | Bet System | Roshan Timer | Live Stats of Picks & Bans | and much more...'}/>
