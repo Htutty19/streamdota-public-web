@@ -33,7 +33,6 @@ export default function DataPolicy(): ReactElement {
             <meta name="theme-color" content="#ffffff" />
         </Head>
         <Nav noScroll onWhite />
-
         <Container>
             <br />
             <br />
