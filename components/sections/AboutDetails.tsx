@@ -62,7 +62,7 @@ export default function AboutDetails(): ReactElement {
                             </svg>
                             <h3>Sources</h3>
                             <div className={'description'}>
-                                The whole project is open source. As we do not intend to earn any money, there is no reason to hide our sources. Maybe some other awesome projects will be build on top! You can find everything on <a href={'https://github.com/michaelketzer?tab=repositories&q=streamdota&type=&language='} target={'_blank'} rel={'noopener'}>Github</a>.
+                                The whole project is open source. As we do not intend to earn any money, there is no reason to hide our sources. Maybe some other awesome projects will be build on top! You can find everything on <a href={'https://github.com/Esportlayers'} target={'_blank'} rel={'noopener'}>Github</a>.
                             </div>
                         </div>
                     </Card>
