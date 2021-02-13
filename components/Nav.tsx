@@ -2,8 +2,14 @@ import { ReactElement, useCallback, useEffect, useRef, useState } from "react";
 import animateScrollTo from 'animated-scroll-to';
 import classNames from "classnames";
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Nav(): ReactElement {
+interface Props {
+    noScroll?: boolean;
+    onWhite?: boolean;
+}
+
+export default function Nav({noScroll, onWhite}: Props): ReactElement {
     const ref = useRef();
     const [sticky, setSticky] = useState(false);
 
@@ -19,15 +25,18 @@ export default function Nav(): ReactElement {
     }, []);
 
     return <div className={'menuContainer'} ref={ref}>
-        <div className={classNames('innerContainer', {sticky})}>
+        <div className={classNames('innerContainer', {sticky, onWhite})}>
             <nav>
                 <Image src={'/images/logo.PNG'} alt={'Streamdota logo'} height={60} width={60} />
 
                 <div className={'linkList'}>
-                    <div className={'link'} onClick={() => scrollTo('home')}>Home</div>
-                    <div className={'link'} onClick={() => scrollTo('features')}>Features</div>
-                    <div className={'link'} onClick={() => scrollTo('events')}>Used by</div>
-                    <div className={'link'} onClick={() => scrollTo('about')}>About</div>
+                    {noScroll && <Link href={'/'}><a className={'link'}>Home</a></Link>}
+                    {!noScroll && <>
+                        <div className={'link'} onClick={() => scrollTo('home')}>Home</div>
+                        <div className={'link'} onClick={() => scrollTo('features')}>Features</div>
+                        <div className={'link'} onClick={() => scrollTo('events')}>Used by</div>
+                        <div className={'link'} onClick={() => scrollTo('about')}>About</div>
+                    </>}
                     <a className={'link'} href={'https://app.streamdota.com/login'}>Login</a>
                 </div>
             </nav>
@@ -81,7 +90,7 @@ export default function Nav(): ReactElement {
                 color: #FFF;
             }
 
-            .sticky .link {
+            .sticky .link, .onWhite .link {
                 color: #666;
             }
 

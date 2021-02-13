@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactElement } from "react";
 
 
@@ -7,8 +8,8 @@ export default function Footer(): ReactElement {
             <a href={'https://twitter.com/streamdotacom'} className={'twitter'} target={'_blank'}  rel={'noopener'}>@streamdota</a> 
 
             <div className={'row'}>
-                <a href={'https://app.streamdota.com/imprint'}>Imprint</a>
-                <a href={'https://app.streamdota.com/dataPolicy'}>Data Policy</a>
+                <Link href={'/about'}><a>Imprint</a></Link>
+                <Link href={'/dataPolicy'}><a>Data Policy</a></Link>
             </div>
         </div>
 
