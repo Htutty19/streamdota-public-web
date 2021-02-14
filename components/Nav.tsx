@@ -38,7 +38,7 @@ export default function Nav({noScroll, onWhite}: Props): ReactElement {
                         <div className={'link'} onClick={() => scrollTo('events')}>Used by</div>
                         <div className={'link'} onClick={() => scrollTo('about')}>About</div>
                     </>}
-                    <a className={'link'} href={'https://app.streamdota.com/login'} onMouseDown={() => event({action: 'login', category: 'header_login', label: 'click'})}>Login</a>
+                    <a className={'link'} href={'https://app.streamdota.com/'} onMouseDown={() => event({action: 'login', category: 'header_login', label: 'click'})}>Login</a>
                 </div>
             </nav>
         </div>
