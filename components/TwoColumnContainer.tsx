@@ -6,11 +6,12 @@ interface Props {
     children: ReactNode;
     reverseWrap?: boolean;
     widths?: number[];
+    reversed?: boolean;
 }
 
-export default function TwoColumnContainer({children, reverseWrap = false, widths = [50, 50]}: Props): ReactElement {
+export default function TwoColumnContainer({children, reverseWrap = false, reversed = false, widths = [50, 50]}: Props): ReactElement {
 
-    return <div className={classNames('twoColumnContainer', {reverseWrap})}>
+    return <div className={classNames('twoColumnContainer', {reversed, reverseWrap})}>
         {React.Children.map(children, (child, idx) => <div className={'col'} key={idx}>
             {child}
         </div>)}
@@ -20,6 +21,9 @@ export default function TwoColumnContainer({children, reverseWrap = false, width
                 display: flex;
                 align-items: center;
                 margin: -1rem;
+            }
+            .reversed {
+                flex-direction: row-reverse;
             }
 
             .col {
@@ -39,6 +43,10 @@ export default function TwoColumnContainer({children, reverseWrap = false, width
 
                 .reverseWrap {
                     flex-wrap: wrap-reverse;
+                }
+
+                .reversed.reverseWrap {
+                    flex-wrap: wrap;
                 }
                 
                 .col, .col + .col  {

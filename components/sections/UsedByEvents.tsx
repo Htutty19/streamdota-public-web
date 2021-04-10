@@ -5,87 +5,84 @@ import { ReactElement } from "react";
 import Section from "../Section";
 import SectionHeader from "../SectionHeader";
 import TwoColumnContainer from "../TwoColumnContainer";
+import classNames from "classnames";
 
+const events = [
+  {
+    logo: '/images/events/eslm.png',
+    logoAlt: 'ESL Meisterschaft Logo',
+    logoProps: {
+      height: 200,
+      width: 193,
+    },
+    name: 'ESL Meisterschaft 2020 Dota 2',
+    logoPadded: false,
+    description: <>
+      We have created a custom branded vote system.<br /> Additionally we provide a roshan timer, draft stats and hero stats.
+    </>,
+  },  {
+    logo: '/images/events/fragster.png',
+    logoAlt: 'Fragster Logo',
+    logoProps: {
+      height: 60,
+      width: 300,
+    },
+    name: 'Fragster DotA 2 Showdown',
+    logoPadded: false,
+    description: <>
+      We provided a roshan timer and our vote system.
+    </>,
+  },  {
+    logo: '/images/events/acl.png',
+    logoAlt: 'ACL Logo',
+    logoProps: {
+      height: 210,
+      width: 200,
+    },
+    name: 'ACL Masters',
+    logoPadded: false,
+    description: <>
+      We provided our vote system, roshan timer and further
+                      stats for ACL Masters.
+    </>,
+  },  {
+    logo: '/images/events/schlag_ivy.png',
+    logoAlt: 'Schlag Ivy Logo',
+    logoProps: {
+      width: 300,
+      height: 169,
+    },
+    logoPadded: true,
+    name: '"Schlag IVY"',
+    description: <>
+      We provided our vote system, roshan timer, hero stats & twitter question feed.
+    </>,
+  }
+]
 export default function UsedByEvents(): ReactElement {
   return (
     <Section bg={"blueGrey"} id={"events"}>
       <SectionHeader title={"Which events used streamdota?"} />
       <Container>
         <div className={"content"}>
-          <div className={"row"}>
+          {events.map(({name, description, logo, logoAlt, logoProps, logoPadded}, idx) => <div className={"row"}>
             <Card>
               <div className={"cardContent"}>
-                <TwoColumnContainer>
-                  <div className={"logo"}>
-                    <Image
-                      src={"/images/events/eslm.png"}
-                      alt={"ESL Meisterschaft Logo"}
-                      height={200}
-                      width={193}
-                    />
+                <TwoColumnContainer reversed={idx % 2 === 0}>
+                  <div className={classNames("logo", {padded: logoPadded})}>
+                    <Image src={logo} alt={logoAlt} {...logoProps}/>
                   </div>
 
                   <div className={"details"}>
-                    <h3>ESL Meisterschaft 2020 Dota 2</h3>
+                    <h3>{name}</h3>
                     <div className={"description"}>
-                      We have created a custom branded vote system.
-                      <br /> Additionally we provide a roshan timer, draft stats
-                      and hero stats.
+                      {description}
                     </div>
                   </div>
                 </TwoColumnContainer>
               </div>
             </Card>
-          </div>
-
-          <div className={"row"}>
-            <Card>
-              <div className={"cardContent"}>
-                <TwoColumnContainer reverseWrap>
-                  <div className={"details"}>
-                    <h3>Fragster DotA 2 Showdown</h3>
-                    <div className={"description"}>
-                      We provided a roshan timer and our vote system.
-                    </div>
-                  </div>
-
-                  <div className={"logo fragster"}>
-                    <Image
-                      src={"/images/events/fragster.png"}
-                      alt={"Fragster Logo"}
-                      height={60}
-                      width={300}
-                    />
-                  </div>
-                </TwoColumnContainer>
-              </div>
-            </Card>
-          </div>
-
-          <div className={"row"}>
-            <Card>
-              <div className={"cardContent"}>
-                <TwoColumnContainer>
-                  <div className={"logo"}>
-                    <Image
-                      src={"/images/events/acl.png"}
-                      alt={"ACL"}
-                      height={210}
-                      width={200}
-                    />
-                  </div>
-
-                  <div className={"details"}>
-                    <h3>ACL Masters</h3>
-                    <div className={"description"}>
-                      We provided our vote system, roshan timer and further
-                      stats for ACL Masters.
-                    </div>
-                  </div>
-                </TwoColumnContainer>
-              </div>
-            </Card>
-          </div>
+          </div>)}
         </div>
       </Container>
 
@@ -101,6 +98,10 @@ export default function UsedByEvents(): ReactElement {
         .logo {
           max-width: 200px;
           margin: 0 auto;
+        }
+
+        .logo.padded {
+          max-width: 300px;
         }
 
         .row {
