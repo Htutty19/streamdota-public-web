@@ -1,5 +1,4 @@
 import { ReactElement, useCallback, useEffect, useRef, useState } from "react";
-import animateScrollTo from 'animated-scroll-to';
 import classNames from "classnames";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,23 +9,21 @@ interface Props {
     onWhite?: boolean;
 }
 
-export default function Nav({noScroll, onWhite}: Props): ReactElement {
+export default function Nav({ noScroll, onWhite }: Props): ReactElement {
     const ref = useRef();
     const [sticky, setSticky] = useState(false);
 
-    const observer = process.browser ? new IntersectionObserver(([{intersectionRatio}]) => setSticky(intersectionRatio !== 1)) : null;
+    const observer = process.browser ? new IntersectionObserver(([{ intersectionRatio }]) => setSticky(intersectionRatio !== 1)) : null;
     useEffect(() => {
         ref.current && observer && observer.observe(ref.current);
 
         return () => observer.disconnect();
     }, [ref])
 
-    const scrollTo = useCallback((id: string) => {
-        animateScrollTo(document.getElementById(id));
-    }, []);
+    const scrollTo = useCallback((id: string) => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), []);
 
     return <div className={'menuContainer'} ref={ref}>
-        <div className={classNames('innerContainer', {sticky, onWhite})}>
+        <div className={classNames('innerContainer', { sticky, onWhite })}>
             <nav>
                 <Image src={'/images/logo.PNG'} alt={'Streamdota logo'} height={60} width={60} />
 
@@ -38,7 +35,7 @@ export default function Nav({noScroll, onWhite}: Props): ReactElement {
                         <div className={'link'} onClick={() => scrollTo('events')}>Used by</div>
                         <div className={'link'} onClick={() => scrollTo('about')}>About</div>
                     </>}
-                    <a className={'link'} href={'https://app.streamdota.com/'} onMouseDown={() => event({action: 'login', category: 'header_login', label: 'click'})}>Login</a>
+                    <a className={'link'} href={'https://app.streamdota.com/'} onMouseDown={() => event({ action: 'login', category: 'header_login', label: 'click' })}>Login</a>
                 </div>
             </nav>
         </div>

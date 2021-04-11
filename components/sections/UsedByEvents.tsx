@@ -65,7 +65,7 @@ export default function UsedByEvents(): ReactElement {
       <SectionHeader title={"Which events used streamdota?"} />
       <Container>
         <div className={"content"}>
-          {events.map(({name, description, logo, logoAlt, logoProps, logoPadded}, idx) => <div className={"row"}>
+          {events.map(({name, description, logo, logoAlt, logoProps, logoPadded}, idx) => <div className={"row"} key={name}>
             <Card>
               <div className={"cardContent"}>
                 <TwoColumnContainer reversed={idx % 2 === 0}>

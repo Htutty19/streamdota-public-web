@@ -27,6 +27,7 @@ export default function Home(): ReactElement {
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="description" content="Your toolbox for streaming dota2 | Dota Win Loss Overlay | Bet System | Roshan Timer | Live Stats of Picks & Bans | and much more..."/>
 
+      <link rel="canonical" href="https://streamdota.com/" />
       <link rel="apple-touch-icon" sizes="180x180" href="/shared/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/shared/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/shared/favicon-16x16.png" />

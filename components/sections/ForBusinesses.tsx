@@ -11,7 +11,7 @@ export default function ForBusiness(): ReactElement {
         <SectionDescription>Our overlays offer a lot of sponsorship opportunities and require only minimal effort on our side</SectionDescription>
 
         <Container>
-            <h4>ESLM Dota 2 - Season 2 - Custom branded vote system</h4>
+            <h3>ESLM Dota 2 - Season 2 - Custom branded vote system</h3>
 
             <div className={'videoContainer'}>
                 <video width={'100%'} autoPlay loop playsInline muted>
@@ -22,7 +22,7 @@ export default function ForBusiness(): ReactElement {
         </Container>
 
         <style jsx>{`
-            h4 {
+            h3 {
                 text-align: center;
             }
 

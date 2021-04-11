@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import animateScrollTo from 'animated-scroll-to';
 import Nav from './Nav';
 import Image from 'next/image';
 
@@ -9,7 +8,7 @@ export default function HeroSection(): ReactElement {
         <Nav />
         <section className={'heroSection'} id={'home'}>
             <div className={'bgImage'}>
-                <Image src={'/images/herobanner.jpg'} layout={'fill'}  alt={'herobanner'} />
+                <Image src={'/images/herobanner.jpg'} layout={'fill'} alt={'herobanner'} />
             </div>
             <div className={'details'}>
                 <h1>Your toolbox for streaming Dota 2</h1>
@@ -17,7 +16,7 @@ export default function HeroSection(): ReactElement {
                     streamdota.com offers different tools to enrich your twitch stream with overlays, chat command and statistics.
                 </div>
 
-                <div className={'learnMore'} onClick={() => animateScrollTo(document.getElementById('features'))}>
+                <div className={'learnMore'} onClick={() => document.getElementById('features').scrollIntoView({ behavior: 'smooth' })}>
                     Learn more
                 </div>
             </div>
@@ -31,7 +30,7 @@ export default function HeroSection(): ReactElement {
                 </svg>
             </div>
         </section>
-        
+
         <style jsx>{`
             .heroSection {
                 position: relative;
