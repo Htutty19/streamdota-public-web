@@ -13,22 +13,22 @@ export default function Team(): ReactElement {
         <Container>
             <TwoColumnContainer widths={[30, 70]}>
                 <div className={'avatar'}>
-                    <Image src={'/images/mk.png'} alt={'Founder Logo'} width={200} height={220}/>
-                </div>    
+                    <Image src={'/images/mk.png'} alt={'Founder Logo'} width={200} height={220} />
+                </div>
 
                 <div className={'details'}>
                     <div className={'header'}>
-                        <h3>Michael Ketzer</h3> <a href={'https://twitter.com/griefcode'} target={'_blank'} className={'twitter'}  rel={'noopener'}>@griefcode</a>
+                        <h3>Michael Ketzer</h3> <a href={'https://twitter.com/griefcode'} target={'_blank'} className={'twitter'} rel={'noopener'}>@griefcode</a>
                     </div>
                     <div className={'subHeader'}>Founder & Developer of streamdota</div>
 
                     <div className={'description'}>
-                    I have started playing around 15 years ago and started developing and hosting 10 years ago. Although I stopped playing dota, I still like to develope projects for it. I love to watch broadcasts, but I also enjoy it more with stats, interactions and in-depth information. That's how I started developing a platform to upgrade dota 2 streaming quality for streamers.
+                        I have started playing around 15 years ago and started developing and hosting 10 years ago. Although I stopped playing dota, I still like to build projects for it. I love to watch broadcasts, but I also enjoy it more with stats, interactions, and in-depth information. That's how I started developing a platform to upgrade dota 2 streaming quality for streamers.
                     </div>
                 </div>
-            </TwoColumnContainer>        
+            </TwoColumnContainer>
 
-            <div className={'info'}>Yep, I'm working alone on this! <br /> However, special thanks to <a href={'https://twitter.com/shokztv'} rel={'noopener'} target={'_blank'} className={'twitter noSpacing'}>@shokztv</a> for providing ideas and helping to advertise the website.</div>    
+            <div className={'info'}>Yep, I'm working alone on this! <br /> However, special thanks to <a href={'https://twitter.com/shokztv'} rel={'noopener'} target={'_blank'} className={'twitter noSpacing'}>@shokztv</a> for providing ideas and helping to advertise the website.</div>
         </Container>
 
         <style jsx>{`

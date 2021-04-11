@@ -13,7 +13,7 @@ export default function HeroSection(): ReactElement {
             <div className={'details'}>
                 <h1>Your toolbox for streaming Dota 2</h1>
                 <div className={'description'}>
-                    streamdota.com offers different tools to enrich your twitch stream with overlays, chat command and statistics.
+                    streamdota.com offers different tools to enrich your twitch stream with overlays, chat commands, and statistics.
                 </div>
 
                 <div className={'learnMore'} onClick={() => document.getElementById('features').scrollIntoView({ behavior: 'smooth' })}>

@@ -18,9 +18,9 @@ const events = [
     name: 'ESL Meisterschaft 2020 Dota 2',
     logoPadded: false,
     description: <>
-      We have created a custom branded vote system.<br /> Additionally we provide a roshan timer, draft stats and hero stats.
+      We have created a custom branded vote system.<br />Additionally, we provide a Roshan timer, draft stats, and hero stats.
     </>,
-  },  {
+  }, {
     logo: '/images/events/fragster.png',
     logoAlt: 'Fragster Logo',
     logoProps: {
@@ -30,9 +30,9 @@ const events = [
     name: 'Fragster DotA 2 Showdown',
     logoPadded: false,
     description: <>
-      We provided a roshan timer and our vote system.
+      We provided a Roshan timer and our vote system.
     </>,
-  },  {
+  }, {
     logo: '/images/events/acl.png',
     logoAlt: 'ACL Logo',
     logoProps: {
@@ -42,10 +42,9 @@ const events = [
     name: 'ACL Masters',
     logoPadded: false,
     description: <>
-      We provided our vote system, roshan timer and further
-                      stats for ACL Masters.
+      We provided our vote system, Roshan timer, and other stats for ACL Masters.
     </>,
-  },  {
+  }, {
     logo: '/images/events/schlag_ivy.png',
     logoAlt: 'Schlag Ivy Logo',
     logoProps: {
@@ -55,22 +54,22 @@ const events = [
     logoPadded: true,
     name: '"Schlag IVY"',
     description: <>
-      We provided our vote system, roshan timer, hero stats & twitter question feed.
+      We provided our vote system, Roshan timer, hero stats & chat questions over twitter.
     </>,
   }
 ]
 export default function UsedByEvents(): ReactElement {
   return (
-    <Section bg={"blueGrey"} id={"events"}>
+    <Section id={"events"}>
       <SectionHeader title={"Which events used streamdota?"} />
       <Container>
         <div className={"content"}>
-          {events.map(({name, description, logo, logoAlt, logoProps, logoPadded}, idx) => <div className={"row"} key={name}>
+          {events.map(({ name, description, logo, logoAlt, logoProps, logoPadded }, idx) => <div className={"row"} key={name}>
             <Card>
               <div className={"cardContent"}>
                 <TwoColumnContainer reversed={idx % 2 === 0}>
-                  <div className={classNames("logo", {padded: logoPadded})}>
-                    <Image src={logo} alt={logoAlt} {...logoProps}/>
+                  <div className={classNames("logo", { padded: logoPadded })}>
+                    <Image src={logo} alt={logoAlt} {...logoProps} />
                   </div>
 
                   <div className={"details"}>

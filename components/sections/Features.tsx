@@ -13,6 +13,9 @@ import SectionDescription from "../SectionDescription";
 import SectionHeader from "../SectionHeader";
 import TwoColumnContainer from "../TwoColumnContainer";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
+import ChatAnalysesFeatures from "./Features/ChatAnalyses";
+import ChatQuestionsFeatures from "./Features/ChatQuestionsFeatures";
+import DraftPanelFeatures from "./Features/DraftPanelFeatures";
 
 export default function Features(): ReactElement {
   return (
@@ -20,8 +23,7 @@ export default function Features(): ReactElement {
       <Section id={"features"}>
         <SectionHeader title={"What features does streamdota offer?"} />
         <SectionDescription>
-          A collection of overlays to enrich your stream with statistics and
-          information
+          A collection of overlays to enrich your stream with statistics and information
         </SectionDescription>
         <CardRow />
       </Section>
@@ -40,6 +42,51 @@ export default function Features(): ReactElement {
                   <video width={"100%"} autoPlay loop playsInline muted>
                     <source
                       src={"/videos/vote_system_preview.mp4"}
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </TwoColumnContainer>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section id={"chatAnalyses"}>
+        <Container>
+          <div className={"featureContainer"}>
+            <div className={"description"}>
+              <h3>Chat Analyses <span className={'newLabel'}>NEW</span></h3>
+
+              <TwoColumnContainer>
+                <div className={"preview imagePreview"}>
+                  <Image
+                    src={"/images/chatAnalyses.PNG"}
+                    alt={"Win Loss Overlay"}
+                    width={400}
+                    height={325}
+                  />
+                </div>
+                <ChatAnalysesFeatures />
+              </TwoColumnContainer>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section id={"chatQuestions"} bg={"blueGrey"}>
+        <Container>
+          <div className={"featureContainer"}>
+            <div className={"description"}>
+              <h3>Chat Questions <span className={'newLabel'}>NEW</span></h3>
+
+              <TwoColumnContainer reverseWrap>
+                <ChatQuestionsFeatures />
+                <div className={"preview"}>
+                  <video width={"100%"} autoPlay loop playsInline muted>
+                    <source
+                      src={"/videos/questions.mp4"}
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -146,9 +193,27 @@ export default function Features(): ReactElement {
               <TwoColumnContainer>
                 <video width={"100%"} autoPlay loop playsInline muted>
                   <source src={"/videos/hero_stats.mp4"} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            Your browser does not support the video tag.
+          </video>
                 <HeroStatsFeatures />
+              </TwoColumnContainer>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section id={"draftPanel"} bg={'blueGrey'}>
+        <Container>
+          <div className={"featureContainer"}>
+            <div className={"description"}>
+              <h3>Observer Tool - Draft Panel <span className={'newLabel'}>COMING SOON</span></h3>
+
+              <TwoColumnContainer>
+                <DraftPanelFeatures />
+                <video width={"100%"} autoPlay loop playsInline muted>
+                  <source src={"/videos/draft_panel.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
               </TwoColumnContainer>
             </div>
           </div>
