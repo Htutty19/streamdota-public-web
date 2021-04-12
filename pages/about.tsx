@@ -7,20 +7,20 @@ import Container from "../components/Container";
 export default function DataPolicy(): ReactElement {
     return <>
         <Head>
-            <meta charSet="UTF-8"/>
-            <meta name="google" content="notranslate"/>
-            <meta httpEquiv="Content-Language" content="de"/>
-            <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+            <meta charSet="UTF-8" />
+            <meta name="google" content="notranslate" />
+            <meta httpEquiv="Content-Language" content="de" />
+            <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
             <title>streamdota.com - Data Policy</title>
 
-            <meta property="og:site_name" content="StreamDota - Your toolbox for streaming dota"/>
-            <meta property="og:title" content={'Dota bot, overlays, stats & more'}/>
-            <meta property="og:description" content={'Your toolbox for streaming dota2 | Dota Win Loss Overlay | Bet System | Roshan Timer | Live Stats of Picks & Bans | and much more...'}/>
-            <meta property="og:image" content={'/shared/share.png'}/>
-            <meta property="og:url" content="https://streamdota.com/"/>
-            <meta property="og:type" content="website"/>
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="description" content="Your toolbox for streaming dota2 | Dota Win Loss Overlay | Bet System | Roshan Timer | Live Stats of Picks & Bans | and much more..."/>
+            <meta property="og:site_name" content="StreamDota - Your toolbox for streaming dota" />
+            <meta property="og:title" content={'Dota bot, overlays, stats & more'} />
+            <meta property="og:description" content={'Your toolbox for streaming dota2 | Dota Win Loss Overlay | Bet System | Roshan Timer | Live Stats of Picks & Bans | and much more...'} />
+            <meta property="og:image" content={'/shared/share.png'} />
+            <meta property="og:url" content="https://streamdota.com/" />
+            <meta property="og:type" content="website" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="description" content="Your toolbox for streaming dota2 | Dota Win Loss Overlay | Bet System | Roshan Timer | Live Stats of Picks & Bans | and much more..." />
 
             <link rel="apple-touch-icon" sizes="180x180" href="/shared/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="/shared/favicon-32x32.png" />
@@ -45,8 +45,8 @@ export default function DataPolicy(): ReactElement {
             <b>Information provided according to Sec. 5 German Telemedia Act (TMG):</b>
             <br />
             Michael Ketzer<br />
-            Sonnenstraße 97<br />
-            40227 Düsseldorf<br />
+            Rabenstraße 28<br />
+            40789 Monheim<br />
             <br />
             <br />
             <br />
@@ -84,7 +84,7 @@ export default function DataPolicy(): ReactElement {
             <span>The commercial use of our contents without permission of the originator is prohibited.&nbsp;</span>
             <br />
             <span>Copyright laws of third parties are respected as long as the contents on these websites do not originate from the provider. Contributions of third parties on this site are indicated as such. However, if you notice any violations of copyright law, please inform us. Such contents will be removed immediately.</span>
-        
+
             <br />
             <br />
             <br />
