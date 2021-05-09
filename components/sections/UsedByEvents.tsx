@@ -60,7 +60,7 @@ const events = [
 ]
 export default function UsedByEvents(): ReactElement {
   return (
-    <Section id={"events"}>
+    <Section id={"events"} bg={'blueGrey'}>
       <SectionHeader title={"Which events used streamdota?"} />
       <Container>
         <div className={"content"}>

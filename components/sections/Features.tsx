@@ -1,7 +1,10 @@
 import AntiSnipeFeatures from "./Features/AntiSnipeFeatures";
 import CardRow from "./Features/CardRow";
+import ChatAnalysesFeatures from "./Features/ChatAnalyses";
+import ChatQuestionsFeatures from "./Features/ChatQuestionsFeatures";
 import Container from "../Container";
 import DotaWLFeatures from "./Features/DotaWLFeatures";
+import DraftPanelFeatures from "./Features/DraftPanelFeatures";
 import DraftStatsFeatures from "./Features/DraftStatsFeatures";
 import HeroStatsFeatures from "./Features/HeroStatsFeatures";
 import HowDoesStreamdotaWork from "./HowDoesStreamdotaWork";
@@ -11,11 +14,9 @@ import RoshanFeatures from "./Features/RoshanFeatures";
 import Section from "../Section";
 import SectionDescription from "../SectionDescription";
 import SectionHeader from "../SectionHeader";
+import TwitchPredictions from "./Features/TwitchPredictions";
 import TwoColumnContainer from "../TwoColumnContainer";
 import VoteSystemFeatures from "./Features/VoteSystemFeatures";
-import ChatAnalysesFeatures from "./Features/ChatAnalyses";
-import ChatQuestionsFeatures from "./Features/ChatQuestionsFeatures";
-import DraftPanelFeatures from "./Features/DraftPanelFeatures";
 
 export default function Features(): ReactElement {
   return (
@@ -53,13 +54,36 @@ export default function Features(): ReactElement {
         </Container>
       </Section>
 
-      <Section id={"chatAnalyses"}>
+      <Section id={"twitchPredictions"}>
+        <Container>
+          <div className={"featureContainer"}>
+            <div className={"description"}>
+              <h3>Twitch Predictions <span className={'newLabel'}>NEW</span></h3>
+
+              <TwoColumnContainer>
+                <div className={"preview imagePreview"}>
+                  <Image
+                    src={"/images/twitchPredictions.jpg"}
+                    alt={"Win Loss Overlay"}
+                    width={500}
+                    height={257}
+                  />
+                </div>
+                <TwitchPredictions />
+              </TwoColumnContainer>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section id={"chatAnalyses"} bg={"blueGrey"}>
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Chat Analyses <span className={'newLabel'}>NEW</span></h3>
 
-              <TwoColumnContainer>
+              <TwoColumnContainer reverseWrap>
+                <ChatAnalysesFeatures />
                 <div className={"preview imagePreview"}>
                   <Image
                     src={"/images/chatAnalyses.PNG"}
@@ -68,21 +92,19 @@ export default function Features(): ReactElement {
                     height={325}
                   />
                 </div>
-                <ChatAnalysesFeatures />
               </TwoColumnContainer>
             </div>
           </div>
         </Container>
       </Section>
 
-      <Section id={"chatQuestions"} bg={"blueGrey"}>
+      <Section id={"chatQuestions"}>
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Chat Questions <span className={'newLabel'}>NEW</span></h3>
 
-              <TwoColumnContainer reverseWrap>
-                <ChatQuestionsFeatures />
+              <TwoColumnContainer>
                 <div className={"preview"}>
                   <video width={"100%"} autoPlay loop playsInline muted>
                     <source
@@ -92,19 +114,21 @@ export default function Features(): ReactElement {
                     Your browser does not support the video tag.
                   </video>
                 </div>
+                <ChatQuestionsFeatures />
               </TwoColumnContainer>
             </div>
           </div>
         </Container>
       </Section>
 
-      <Section id={"dotaWL"}>
+      <Section id={"dotaWL"} bg={"blueGrey"}>
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Gameplay Tool - Dota Win/Loss Overlay</h3>
 
-              <TwoColumnContainer>
+              <TwoColumnContainer reverseWrap>
+                <DotaWLFeatures />
                 <div className={"preview imagePreview"}>
                   <Image
                     src={"/images/winLoss.jpg"}
@@ -113,23 +137,19 @@ export default function Features(): ReactElement {
                     height={191}
                   />
                 </div>
-
-                <DotaWLFeatures />
               </TwoColumnContainer>
             </div>
           </div>
         </Container>
       </Section>
 
-      <Section id={"antiSnipeMap"} bg={"blueGrey"}>
+      <Section id={"antiSnipeMap"}>
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Gameplay Tool - Anti Snipe Minimap</h3>
 
-              <TwoColumnContainer reverseWrap>
-                <AntiSnipeFeatures />
-
+              <TwoColumnContainer>
                 <div className={"preview imagePreview minimap"}>
                   <Image
                     src={"/images/snipeMap.png"}
@@ -138,19 +158,21 @@ export default function Features(): ReactElement {
                     height={180}
                   />
                 </div>
+                <AntiSnipeFeatures />
               </TwoColumnContainer>
             </div>
           </div>
         </Container>
       </Section>
 
-      <Section id={"roshanTimer"}>
+      <Section id={"roshanTimer"} bg={"blueGrey"}>
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Observer Tool - Roshan Timer</h3>
 
-              <TwoColumnContainer>
+              <TwoColumnContainer reverseWrap>
+                <RoshanFeatures />
                 <div className={"preview imagePreview"}>
                   <Image
                     src={"/images/roshanTimer.jpg"}
@@ -159,61 +181,60 @@ export default function Features(): ReactElement {
                     height={191}
                   />
                 </div>
-                <RoshanFeatures />
               </TwoColumnContainer>
             </div>
           </div>
         </Container>
       </Section>
 
-      <Section id={"draftStats"} bg={"blueGrey"}>
+      <Section id={"draftStats"} >
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Observer Tool - Draft Stats </h3>
 
-              <TwoColumnContainer reverseWrap>
-                <DraftStatsFeatures />
+              <TwoColumnContainer>
                 <video width={"100%"} autoPlay loop playsInline muted>
                   <source src={"/videos/draft_stats.mp4"} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                <DraftStatsFeatures />
               </TwoColumnContainer>
             </div>
           </div>
         </Container>
       </Section>
 
-      <Section id={"heroStats"}>
+      <Section id={"heroStats"} bg={"blueGrey"}>
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Observer Tool - Hero Stats </h3>
 
-              <TwoColumnContainer>
+              <TwoColumnContainer reverseWrap>
+                <HeroStatsFeatures />
                 <video width={"100%"} autoPlay loop playsInline muted>
                   <source src={"/videos/hero_stats.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-                <HeroStatsFeatures />
               </TwoColumnContainer>
             </div>
           </div>
         </Container>
       </Section>
 
-      <Section id={"draftPanel"} bg={'blueGrey'}>
+      <Section id={"draftPanel"}>
         <Container>
           <div className={"featureContainer"}>
             <div className={"description"}>
               <h3>Observer Tool - Draft Panel <span className={'newLabel'}>COMING SOON</span></h3>
 
               <TwoColumnContainer>
-                <DraftPanelFeatures />
                 <video width={"100%"} autoPlay loop playsInline muted>
                   <source src={"/videos/draft_panel.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+                <DraftPanelFeatures />
               </TwoColumnContainer>
             </div>
           </div>
