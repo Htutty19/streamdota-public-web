@@ -18,7 +18,7 @@ export default function Team(): ReactElement {
 
                 <div className={'details'}>
                     <div className={'header'}>
-                        <h3>Michael Ketzer</h3> <a href={'https://twitter.com/griefcode'} target={'_blank'} className={'twitter'} rel={'noopener'}>@griefcode</a>
+                        <h3>Michael Ketzer</h3> <a href={'https://twitter.com/michaelketzer'} target={'_blank'} className={'twitter'} rel={'noopener'}>@michaelketzer</a>
                     </div>
                     <div className={'subHeader'}>Founder & Developer of streamdota</div>
 
